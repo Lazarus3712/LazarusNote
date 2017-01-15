@@ -189,20 +189,15 @@ public class Manager extends Activity {
                 } else
                     map.put("Name", finish.getName());
 
-                /* Обрізання довгих рядків
-                    і запис в MAP
-                */
 
                 if (finish.isDirectory()) {
                     if (mgrC.getSpace(finish) > 0) {
                         map.put("Icon", R.mipmap.ic_folder);
-                     //   map.put("Type", TextView.GONE);
                     } else if (mgrC.getSpace(finish) == 0) {
                         map.put("Icon", R.mipmap.ic_folder_null);
                     }
                 } else if (finish.isFile()) {
                     map.put("Size", mgrC.getSize(finish));
-                  //  map.put("Type", TextView.VISIBLE);
 
                     if (mgrC.getFileType(finish.getName()).equals("txt")) {
                         map.put("Icon", R.mipmap.ic_txt_file);
@@ -234,7 +229,6 @@ public class Manager extends Activity {
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(Manager.this, arrayFile[position].getName()
                                 + " видалено", Toast.LENGTH_LONG).show();
-                        // arrayFile[position].delete();
                         mgrC.AllDelete(arrayFile[position]);
                         getFileList(stringPath);
                         al.cancel();

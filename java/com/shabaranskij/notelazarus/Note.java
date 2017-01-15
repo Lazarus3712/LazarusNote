@@ -70,7 +70,6 @@ public class Note extends Activity {
             } else {
                 Text.setText(InMem.getString("SaveText", ""));
                 FileName.setText(InMem.getString("PATH",""));
-             //   InMem.edit().remove("SaveText").remove("PATH").apply();
             }
 
             Intent intent = getIntent();

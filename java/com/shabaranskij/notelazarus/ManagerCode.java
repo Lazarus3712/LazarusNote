@@ -12,7 +12,6 @@ public class ManagerCode extends Manager {
         float size = (float) file.length();
         String sizeToString = "";
 
-
         if (size < 1_024) {
             sizeToString = String.valueOf((int) size)+" б";
         } else if (size >= 1_024 && size < 1_048_576) {
@@ -54,8 +53,7 @@ public class ManagerCode extends Manager {
 
     String getName(String s) {
         String type = getFileType(s);
-        String name = type.equals("0") ? s : s.substring(0,s.length()-type.length()-1);
-        return name;
+        return type.equals("0") ? s : s.substring(0,s.length()-type.length()-1);
     }
 
     void AllDelete(File f) {
