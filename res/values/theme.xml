@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@color/trans</item>
+        </style>
+    <color name="trans">#00000000</color>
+</resources>
