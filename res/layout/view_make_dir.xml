@@ -25,6 +25,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/dir_name" android:inputType="text" android:layout_margin="5dp"
-                android:background="#efefef" android:padding="7dp"/>
+                android:background="@color/sp" android:padding="7dp"/>
     </LinearLayout>
 </LinearLayout>
