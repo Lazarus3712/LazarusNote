@@ -174,7 +174,7 @@ public class Manager extends Activity {
     }
 
     ////////////FILE_LIST/////////////////////////////////////
-    private void getFileList(String path) throws Error {
+    private void getFileList(String path) {
         try {
             File file = new File(path);
             stringPath = path;
